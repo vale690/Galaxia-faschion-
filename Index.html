@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galaxia Fashion</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- FONDO GALAXIA -->
+    <canvas id="galaxia-bg"></canvas>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <svg id="logo-galaxia" width="180" height="60" viewBox="0 0 350 60" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="gradGalaxia" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FF00FF;stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:1"/>
+                    </linearGradient>
+                </defs>
+                <text x="0" y="45" fill="url(#gradGalaxia)" font-size="48" font-family="Brush Script MT, cursive" font-weight="bold">
+                    Galaxia
+                </text>
+                <text x="200" y="45" fill="#FFD700" font-size="36" font-family="Arial, sans-serif">Fashion</text>
+                <circle cx="330" cy="20" r="12" fill="#FF8C00" id="globo"/>
+            </svg>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#sobre-nosotros">Sobre Galaxia Fashion</a></li>
+            </ul>
+        </nav>
+        <div class="carrito">
+            🛒 <span id="carrito-count">0</span>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <h2 class="titulo-principal">Bienvenidos a Galaxia Fashion</h2>
+        <p class="texto-cursiva">Explora nuestra colección y encuentra tu estilo único. Cada prenda ha sido creada para que brilles y expreses tu esencia con confianza y alegría. ✨</p>
+        <a href="#productos" class="btn">Ver Productos</a>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos">
+        <h2 class="titulo-principal">Nuestros Productos</h2>
+
+        <!-- Camisas -->
+        <div class="categoria">
+            <h3>Camisas</h3>
+            <div class="galeria">
+                <div class="producto left">
+                    <img src="https://via.placeholder.com/300x400.png?text=Camisa+1" alt="Camisa 1">
+                    <h4>Camisa Galaxia</h4>
+                    <p class="texto-cursiva">Elegancia que ilumina tu día.</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+                <div class="producto right">
+                    <img src="https://via.placeholder.com/300x400.png?text=Camisa+2" alt="Camisa 2">
+                    <h4>Camisa Luminosa</h4>
+                    <p class="texto-cursiva">Calidez con estilo único.</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalones -->
+        <div class="categoria">
+            <h3>Pantalones</h3>
+            <div class="galeria">
+                <div class="producto left">
+                    <img src="https://via.placeholder.com/300x400.png?text=Pantalón+1" alt="Pantalón 1">
+                    <h4>Pantalón Galaxia</h4>
+                    <p class="texto-cursiva">Comodidad y estilo en uno.</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+                <div class="producto right">
+                    <img src="https://via.placeholder.com/300x400.png?text=Pantalón+2" alt="Pantalón 2">
+                    <h4>Pantalón Luminosa</h4>
+                    <p class="texto-cursiva">Perfecto para cualquier ocasión.</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faldas -->
+        <div class="categoria">
+            <h3>Faldas</h3>
+            <div class="galeria">
+                <div class="producto left">
+                    <img src="https://via.placeholder.com/300x400.png?text=Falda+1" alt="Falda 1">
+                    <h4>Falda Galaxia</h4>
+                    <p class="texto-cursiva">Fluye con estilo y gracia.</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+                <div class="producto right">
+                    <img src="https://via.placeholder.com/300x400.png?text=Falda+2" alt="Falda 2">
+                    <h4>Falda Luminosa</h4>
+                    <p class="texto-cursiva">Color y movimiento en cada paso.</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accesorios -->
+        <div class="categoria">
+            <h3>Accesorios</h3>
+            <div class="galeria">
+                <div class="producto left">
+                    <img src="https://via.placeholder.com/300x400.png?text=Accesorio+1" alt="Accesorio 1">
+                    <h4>Bolsito Galaxia</h4>
+                    <p class="texto-cursiva">Detalles que brillan con tu estilo.</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+                <div class="producto right">
+                    <img src="https://via.placeholder.com/300x400.png?text=Accesorio+2" alt="Accesorio 2">
+                    <h4>Sombrero Luminosa</h4>
+                    <p class="texto-cursiva">Para destacar en cada ocasión.</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros">
+        <h2 class="titulo-principal">Sobre Galaxia Fashion</h2>
+        <p class="texto-cursiva">Galaxia Fashion es mucho más que ropa; es un universo de estilo que refleja tu esencia única. Cada prenda ha sido diseñada para que te sientas radiante, confiada y lista para conquistar el mundo. Queremos que cada pieza cuente tu historia, te haga brillar y te recuerde que la moda es una forma de expresión. ✨🌌</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Valeris Causil - Diseñando estilos que iluminan tu universo ✨</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+          </html>
