@@ -1,0 +1,234 @@
+/* --------------------------
+   ESTILOS GENERALES
+---------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+/* --------------------------
+   FONDO GALAXIA
+---------------------------*/
+canvas#galaxia-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* --------------------------
+   HEADER
+---------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FF00FF;
+}
+
+header .carrito {
+    font-size: 22px;
+}
+
+/* --------------------------
+   HERO
+---------------------------*/
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.titulo-principal {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #FF8C00;
+}
+
+.texto-cursiva {
+    font-size: 18px;
+    font-style: italic;
+    color: #00FFFF;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* --------------------------
+   PRODUCTOS
+---------------------------*/
+#productos {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+#productos h2 {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.categoria {
+    margin-bottom: 60px;
+}
+
+.categoria h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.producto {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    width: 48%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto.left { margin-right: auto; }
+.producto.right { margin-left: auto; }
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.6);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.producto h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    margin-bottom: 15px;
+}
+
+.btn-agregar {
+    padding: 10px 20px;
+    background: #FF0080;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-agregar:hover {
+    background: #FF8C00;
+    transform: scale(1.05);
+}
+
+/* --------------------------
+   SOBRE NOSOTROS
+---------------------------*/
+#sobre-nosotros {
+    padding: 80px 50px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 20px;
+    margin: 50px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* --------------------------
+   FOOTER
+---------------------------*/
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.6);
+    font-size: 16px;
+}
+
+/* --------------------------
+   LOGO ANIMADO
+---------------------------*/
+#logo-galaxia text:first-child {
+    animation: glowText 2s ease-in-out infinite alternate;
+}
+
+#logo-galaxia #globo {
+    transform-origin: 330px 20px;
+    animation: girarGlobo 4s linear infinite;
+}
+
+@keyframes glowText {
+    from { fill-opacity: 0.6; }
+    to { fill-opacity: 1; }
+}
+
+/* Gira el globo */
+@keyframes girarGlobo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px){
+    .galeria { flex-direction: column; align-items: center; }
+    .producto { width: 80% !important; margin: 0 auto; }
+}
