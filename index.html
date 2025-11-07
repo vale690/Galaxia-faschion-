@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Galaxia Fashion</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Fondo animado de corazones -->
-  <div id="corazones"></div>
-
   <header>
     <div class="logo">
-      <img src="galaxia-logo.png" alt="Logo Galaxia Fashion" class="logo-img">
+      <!-- Logo incluido directamente -->
+      <img src="galaxia-logo.png" alt="Logo Galaxia Fashion" class="logo-img" />
     </div>
+
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#productos">Productos</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><button id="carrito-btn">🛒 Carrito (<span id="contador">0</span>)</button></li>
+        <li>
+          <button id="carrito-btn">🛒 Carrito (<span id="contador">0</span>)</button>
+        </li>
       </ul>
     </nav>
   </header>
 
   <section id="inicio" class="inicio">
-    <h2 class="titulo-bienvenida">
-      Bienvenidos a<br> Galaxia Fashion
-    </h2>
+    <h2 class="titulo-bienvenida">Bienvenidos a<br />Galaxia Fashion</h2>
     <p class="frase">✨ Donde cada prenda brilla como una estrella ✨</p>
   </section>
 
   <section id="productos" class="productos">
     <h2 class="titulo-seccion">Nuestros Productos</h2>
+
     <div class="galeria">
       <div class="item">
-        <img src="camisa1.jpg" alt="Camisa moderna">
+        <img src="camisa1.jpg" alt="Camisa moderna" />
         <h3>Camisa Galaxy</h3>
         <p>$45.000</p>
         <button class="agregar">Agregar al carrito</button>
       </div>
+
       <div class="item">
-        <img src="pantalon1.jpg" alt="Pantalón elegante">
+        <img src="pantalon1.jpg" alt="Pantalón elegante" />
         <h3>Pantalón Star</h3>
         <p>$65.000</p>
         <button class="agregar">Agregar al carrito</button>
       </div>
+
       <div class="item">
-        <img src="falda1.jpg" alt="Falda juvenil">
+        <img src="falda1.jpg" alt="Falda juvenil" />
         <h3>Falda Lunar</h3>
         <p>$50.000</p>
         <button class="agregar">Agregar al carrito</button>
       </div>
+
       <div class="item">
-        <img src="chaqueta1.jpg" alt="Chaqueta fashion">
+        <img src="chaqueta1.jpg" alt="Chaqueta fashion" />
         <h3>Chaqueta Nebula</h3>
         <p>$90.000</p>
         <button class="agregar">Agregar al carrito</button>
@@ -64,14 +67,18 @@
   <section id="sobre" class="sobre">
     <h2 class="titulo-seccion">Sobre Galaxia Fashion</h2>
     <p>
-      Galaxia Fashion es un universo de estilo, creado para personas que quieren brillar con su propia luz.  
-      Cada prenda está inspirada en la belleza del cosmos, con diseños modernos, juveniles y llenos de color.  
+      Galaxia Fashion es un universo de estilo creado para personas que quieren
+      brillar con su propia luz. Cada prenda está inspirada en la belleza del
+      cosmos, con diseños modernos, juveniles y llenos de color.  
       ¡Explora, combina y deja que tu estilo sea tan infinito como el universo!
     </p>
   </section>
 
   <footer>
-    <p>© 2025 Galaxia Fashion | Diseñado por <strong>Valeris Causil</strong> ✨ “Tu estilo brilla aquí”</p>
+    <p>
+      © 2025 Galaxia Fashion | Diseñado por <strong>Valeris Causil</strong> ✨
+      “Tu estilo brilla aquí”
+    </p>
   </footer>
 
   <script src="script.js"></script>
